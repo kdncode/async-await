@@ -52,3 +52,34 @@
 // Or there is only ONE 
 // arr.forEach( e => console.log(e));
 // console.log("=======");
+
+// =============== //
+// Create an array from a given array
+// let array = [4, 5, 7,2, 6];
+
+// // array.forEach(e => console.log(e));
+
+// array2 = array.map(function(e) {
+//     return e * 2;
+// })
+
+// // Or this... Because => replaces 'return'
+// array2 = array.map(e =>  e * 2);
+
+// console.log(array2);
+
+// =============== //
+// function add(a, b) {
+//     return a + b;
+// }
+
+// // Or use Arrow function
+// let add = (a, b) => {
+//     return a + b;
+// }
+
+// console.log(add(3, 2));
+
+// // Or this
+// let add = (a, b) => a + b;
+// console.log(add(1, 3));
