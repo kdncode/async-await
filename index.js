@@ -24,7 +24,7 @@ if(true) {
 
 console.log('c = ', c)
 
-=============== //
+//=============== //
 
 //Arrow 
 let arr = [3, 4, 1, 0, 5];
@@ -68,7 +68,7 @@ array2 = array.map(e =>  e * 2);
 
 console.log(array2);
 
-=============== //
+//=============== //
 function add(a, b) {
     return a + b;
 }
