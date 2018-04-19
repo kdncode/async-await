@@ -38,3 +38,12 @@ while(answer.indexOf('yes') === -1 ) {
     var answer = prompt('Have you done your homework yet?');
 }
 alert('Woohoo! Can I borrow it?')
+
+// Another one ^^
+var str = "hello world"
+var i = 0
+
+while( i < str.length) {
+    console.log(str[i])
+    i++
+}
