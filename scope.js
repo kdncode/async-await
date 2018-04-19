@@ -16,3 +16,17 @@ function doSt() {
 
 doSt()
 console.log(hi)
+
+// Practice problems
+
+var num = 8; // Step (1)
+
+function doMath() {
+    num += 1;  // Step (3) -> 9 + 1 = 10 
+
+    if (num % 5 === 0) { return true} // 
+    return false
+}
+
+num += 1; // step (2) -> we got 8 + 1 = 9 
+console.log(doMath())
