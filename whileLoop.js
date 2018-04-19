@@ -30,3 +30,11 @@ while(i <= 50) {
     }
     i++
 }
+
+// Real worl problem
+var answer = prompt('Have you done your homework yet?')
+
+while(answer.indexOf('yes') === -1 ) {
+    var answer = prompt('Have you done your homework yet?');
+}
+alert('Woohoo! Can I borrow it?')
