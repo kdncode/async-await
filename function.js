@@ -1,4 +1,6 @@
 // Return keyword
+
+// Function declaration
 function capitalize(str) {
     if(typeof str === 'number') {
         return 'That is not a string'
@@ -6,6 +8,16 @@ function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+
+// Function expression
+var capitalize = function(str) {
+    if(typeof str === 'number') {
+        return 'That is not a string'
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Call the func
 var hi = 'hello word'
 var newHi = capitalize(hi)
 
@@ -14,6 +26,7 @@ var newNum = capitalize(num);
 
 console.log(newHi)
 console.log(newNum)
+
 
 let getFunc = (num) => {
     if ( num >= 0 ) {
