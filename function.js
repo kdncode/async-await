@@ -12,6 +12,9 @@ var newHi = capitalize(hi)
 var num = 22
 var newNum = capitalize(num);
 
+console.log(newHi)
+console.log(newNum)
+
 let getFunc = (num) => {
     if ( num >= 0 ) {
         return () => { console.log('Positive')}
