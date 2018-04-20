@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DOM</title>
+
+    <style>
+        .pink {
+            background: pink;
+        }
+    </style>
 </head>
 <body>
     <button>Click Me</button><br>
@@ -16,7 +22,9 @@
   <li>Ayeeee</li>
 </ul> 
 
-<button id="change">Change bg color</button>
+<button id="change">Red</button>
+
+<button id="changeBtn">Pink</button>
 
 <script>
 
@@ -49,15 +57,23 @@ button_2.addEventListener("click", function() {
   if ( isRed ) {
     
     document.body.style.background = "white";
-    isRed = false;
     
   } else {
     
     document.body.style.background = "red";
-    this.style.background = "green";
-    isRed = true;
+    // this.style.background = "green";   
   }
+  
+  isRed = !isRed;
 
+})
+
+// Or use ClassLust + CSS toggle
+
+var button_3 = document.querySelector("#changeBtn");
+
+button_3.addEventListener("click", function() {
+  document.body.classList.toggle("pink");
 })
 
 </script>
