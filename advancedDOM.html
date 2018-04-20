@@ -16,8 +16,10 @@
   <li>Ayeeee</li>
 </ul> 
 
+<button id="change">Change bg color</button>
+
 <script>
-    
+
 var button = document.querySelector("button");
 var paragraph = document.querySelector("p");
 
@@ -36,6 +38,27 @@ for( i = 0; i < list.length; i++ ){
     this.style.color = "green";
   })
 }
+
+// Change bg color
+var button_2 = document.querySelector("#change");
+var isRed = false;
+
+button_2.addEventListener("click", function() {
+  
+  // If white
+  if ( isRed ) {
+    
+    document.body.style.background = "white";
+    isRed = false;
+    
+  } else {
+    
+    document.body.style.background = "red";
+    this.style.background = "green";
+    isRed = true;
+  }
+
+})
 
 </script>
 </body>
