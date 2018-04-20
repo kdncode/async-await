@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+<body>
+    <button>Click Me</button><br>
+    <p>No one clicks me</p><br>
+
+<ul>
+  <li>Hello</li>
+  <li>World</li>
+  <li>Ayeeee</li>
+</ul> 
+
+<script>
+    
+var button = document.querySelector("button");
+var paragraph = document.querySelector("p");
+
+button.addEventListener("click", function() {
+  alert('texts about to be changed')
+  // paragraph.textContent = "Someone just clicked me";
+  paragraph.style.color = "red";
+})
+
+// UL 
+var list = document.querySelectorAll("li");
+
+for( i = 0; i < list.length; i++ ){
+  
+  list[i].addEventListener("click", function() {
+    this.style.color = "green";
+  })
+}
+
+</script>
+</body>
+</html>
