@@ -11,9 +11,20 @@
     <h1>jQuery Demo</h1>
 
     <ul>
-        <li>Paris</li>
-        <li>Greece</li>
-        <li>Japan</li>
+        <li id="paris">Paris</li>
+        <li id="greece">Greece <a href="https://google.com">Google</a></li>
+        <li id="japan">Japan</li>
     </ul>
+
+    <!-- jQuery -->
+    <script>
+
+        // Object 
+        var styles = {
+            color: "green",
+            background: "pink"
+        }
+        $("h1").css(styles);
+    </script>
 </body>
 </html>
