@@ -16,8 +16,8 @@
         <li id="japan">Japan</li>
     </ul>
 
-    <input type="text" placeholder="Name">
-
+    <input type="text" placeholder="Name"><br>
+    <img src="https://images.pexels.com/photos/868330/pexels-photo-868330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
 
     <!-- jQuery -->
     <script>
@@ -37,7 +37,13 @@
             color: "red",
             background: "teal"
         })
+
+        // Img
+        $('img').css('width', '200px');
         
+        // Change an image
+        $('img').attr('src', 'https://images.pexels.com/photos/881066/pexels-photo-881066.jpeg?auto=compress&cs=tinysrgb&h=350')
+
     </script>
 </body>
 </html>
