@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jQuery Demo</title>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <style>
+        div {
+            background: yellow;
+            color: black;
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+    </style>
 </head>
 <body>
     <h1>jQuery Demo</h1>
@@ -18,6 +28,12 @@
 
     <input type="text" placeholder="Name"><br>
     <img src="https://images.pexels.com/photos/868330/pexels-photo-868330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+    <br>
+
+    <button id="onClick">On Click Me</button>
+    <div>hello 1</div>
+    <div>hello 2</div>
+    <div>hello 3</div>
 
     <!-- jQuery -->
     <script>
@@ -44,6 +60,18 @@
         // Change an image
         $('img').attr('src', 'https://images.pexels.com/photos/881066/pexels-photo-881066.jpeg?auto=compress&cs=tinysrgb&h=350')
 
+        // On click
+        $("#onClick").on("click", function() {
+            $("div").slideToggle(1000)
+        })
+
+        // On click if you want toggle finish first then another task
+        // Use callback
+            $("#onClick").on("click", function() {
+            $("div").slideToggle(1000, function(){
+                $(this).remove();
+            })
+        })
     </script>
 </body>
 </html>
